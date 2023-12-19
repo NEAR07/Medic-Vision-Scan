@@ -1,4 +1,4 @@
-# CC_BangkitCapstone
+# Bangkit Capstone General API
 Capstone bangkit
 
 # How to Run
