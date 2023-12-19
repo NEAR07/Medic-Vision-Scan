@@ -7,6 +7,9 @@ The model is based on a pre-trained version of SSD-MobileNet V2. We'll start by 
 
 Once it's trained, we'll save the model in h5 format
 
+# Model Building's Notebook
+[image classification of cataract eye](https://github.com/NEAR07/Medic-Vision-Scan/blob/master/Machine_Learning/Notebook/Train_Classification.ipynb)
+
 # Import required libraries
 In this notebook, we used several libraries to build the model and training model such as :
 - TensorFlow
