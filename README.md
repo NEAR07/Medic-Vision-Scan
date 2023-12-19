@@ -7,6 +7,9 @@ Medic Vision Scan
 # About
 
 # Background
+According to the World Health Organization (WHO), an estimated 42% of blindness cases worldwide caused by cataracts originate from Southeast Asia.
+
+ Indonesia holds the highest incidence rate of cataracts in Southeast Asia, at 1.5%. On a global scale, Indonesia ranks third in terms of blindness rates, standing at 1.47%.
 
 # Project Team Member
 
@@ -21,3 +24,4 @@ Medic Vision Scan
 
 # App Interface
 
+![image](https://github.com/NEAR07/Medic-Vision-Scan/blob/master/App_Interface.jpg)
