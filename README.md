@@ -4,7 +4,7 @@ Medic Vision Scan
 
 ![image](https://github.com/NEAR07/Medic-Vision-Scan/assets/70014607/7b40ae34-0ffe-4254-a938-b325c912462b)
 
-# About
+# Overview
 
 # Background
 According to the World Health Organization (WHO), an estimated 42% of blindness cases worldwide caused by cataracts originate from Southeast Asia.
