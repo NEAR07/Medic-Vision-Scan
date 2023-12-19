@@ -1,7 +1,7 @@
 # Machine Learning Medic Vision Scan
 
 Machine learning to detect and classify cataract disesase
-We'll use TensorFlow 2 to create an image classification model, train it with a eyes with and without cataract dataset
+We'll use TensorFlow v2 to create an image classification model, train it with a eyes with and without cataract dataset
 
 The model is based on a pre-trained version of SSD-MobileNet V2. We'll start by retraining only the classification layers, reusing MobileNet's pre-trained feature extractor layers. Then we'll fine-tune the model by updating weights in some of the feature extractor layers. This type of transfer learning is much faster than training the entire model from scratch.
 
@@ -15,9 +15,9 @@ In this notebook, we used several libraries to build the model and training mode
 - Pandas
 
 # Prepare the training data
-First let's download and organize the eyes with and without cataract disease dataset we'll use to retrain the model. Here we use an example of an eyes with cataract disease dataset image from Kaggle (cataract). Beside the dataset from kaggle we also used web scrapping to collecting dataset.
+First let's download and organize the eyes with and without cataract disease dataset we'll use to retrain the model. Here we use an example of an eyes with cataract disease dataset image from [roboflow](https://universe.roboflow.com/cataract/cataract-v01/dataset/7). Beside the dataset from roboflow we also used Google Image Scrape to collecting dataset.
 
-From several datasets, we combined into one dataset
+From several datasets, we combined into one [dataset](https://github.com/NEAR07/Medic-Vision-Scan/tree/master/Machine_Learning/Dataset)
 
 We use ImageDataGenerator to rescale the image data into float values (divide by 255 so the tensor values are between 0 and 1), and call flow_from_directory() to create three generators: one for the training dataset, one for the validation dataset, and one for the test dataset.
 
