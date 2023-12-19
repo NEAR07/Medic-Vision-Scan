@@ -33,10 +33,10 @@ note : Paper [Mobilenet-SSDv2: An Improved Object Detection Model for Embedded S
 # Create the base model
 When instantiating the MobileNet V2, we specify the include_top=False argument in order to load the network without the classification layers at the top. Then we set trainable false to freeze all the weights in the base model. This effectively converts the model into a feature extractor because all the pre-trained weights and biases are preserved in the lower layers when we begin training for our classification head.
 
-#Add a classification head
+# Add a classification head
 Now we create a new Sequential model and pass the frozen MobileNet V2 as the base of the graph, and append new classification layers so we can set the final output dimension to match the number of classes in our dataset.
 
-#Configure the model
+# Configure the model
 Although this method is called compile(), it's basically a configuration step that's required before we can start training. And because the majority of the model graph is frozen in the base model, weights from only the last convolution and dense layers are trainable.
 
 # Train the model
