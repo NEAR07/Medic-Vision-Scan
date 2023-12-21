@@ -1,5 +1,5 @@
-# CC_BangkitCapstone
-Capstone bangkit
+# Bangkit Capstone General API
+REST API for General
 
 # How to Run
 Install (use Node.js version 18.18.2 if there are any problems with other versions)

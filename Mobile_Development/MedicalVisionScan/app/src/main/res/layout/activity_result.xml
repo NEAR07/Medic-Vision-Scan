@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <ImageView
+        android:id="@+id/iv_result"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="120dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/result_bg"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="4dp"
+        android:text="TextView"
+        android:textColor="#696969"
+        android:textSize="12sp"
+        android:fontFamily="@font/dmsans_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_result" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="-12dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewv_result">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="32dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/check_bg"
+                        android:padding="4dp">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="13dp"
+                            android:src="@drawable/baseline_done_24"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/success_identified_your_eyes"
+                        android:textColor="#176B87"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/dmsans_medium"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_result_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/normal"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/dmsans_bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/description"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/dmsans_bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:text="@string/from_wikipedia_the_free_encyclopedia"
+                    android:textColor="#8C8C8C"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/dmsans_medium"/>
+
+                <com.colormoon.readmoretextview.ReadMoreTextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/normal_desc"
+                    android:textColor="#8C8C8C"
+                    android:textSize="16sp"
+                    android:justificationMode="inter_word"
+                    android:fontFamily="@font/dmsans_regular"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/prevention"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/dmsans_bold"/>
+
+                <com.colormoon.readmoretextview.ReadMoreTextView
+                    android:id="@+id/prevention"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/normal_prevention"
+                    android:textColor="#8C8C8C"
+                    android:textSize="16sp"
+                    android:justificationMode="inter_word"
+                    android:fontFamily="@font/dmsans_regular"/>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
